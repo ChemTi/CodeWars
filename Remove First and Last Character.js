@@ -2,7 +2,7 @@
 You're given one parameter, the original string. You don't have to worry with strings with less than two characters. */
 
 function removeChar(str){
-    return str = str.slice(1, str.length-1);
+    return str.slice(1, str.length-1);
 };
 
 console.log(removeChar('a1234a'));
