@@ -26,5 +26,17 @@ Don't forget to convert the percent parameter as a percentage in the body of you
 */
 
 function nbYear(p0, percent, aug, p) {
-    
+    let popPerc = p0 * percent/100;
+    let popTotal = p0 + popPerc + aug;
+    let years  = 1;
+    while (popTotal < p) {
+        popPerc = popTotal * percent/100;
+        popTotal = popTotal + popPerc + aug;
+        years++;
+    }
+    return years;
 }
+
+console.log(nbYear(1500, 5, 100, 5000), 15);
+console.log(nbYear(1500000, 2.5, 10000, 2000000), 10);
+console.log(nbYear(1500000, 0.25, 1000, 2000000), 94);
