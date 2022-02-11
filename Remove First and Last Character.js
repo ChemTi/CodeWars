@@ -18,3 +18,19 @@ console.log(removeChar("и1234Й"));
     str1.pop();
     return str1.join("");
 } */
+
+/* const removeChar = (str) => str.replace(/^.|.$/g, ''); */
+
+/* const removeChar = (str) => str.replace(/^\w|\w$/g, '') */
+
+/* function removeChar(str){
+ //You got this!
+    var input_str = str;
+    var output_str = '';
+
+    for (var i = 1; i < input_str.length-1; i++) {
+    output_str += input_str[i];
+    }
+
+return output_str;
+}; */
