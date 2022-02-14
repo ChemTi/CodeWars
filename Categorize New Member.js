@@ -64,3 +64,46 @@ function openOrSenior(data){
   }
   return getOpenOrSenior;
 } */
+
+
+/* function openOrSenior(data){
+  var rez=[];
+  for(var i=0;i<data.length;i++){
+    if(data[i][0]>=55&&data[i][1]>7){rez.push("Senior");}else rez.push("Open");
+  }
+  return rez;
+} */
+
+
+/* const Category = {
+  Open: 'Open',
+  Senior: 'Senior',
+}; */
+
+
+/* function openOrSenior(data){
+ return data.map(([age, handicap]) => {
+    if (age >= 55 && handicap > 7) {
+      return Category.Senior;
+    }
+
+    return Category.Open;
+ });
+} */
+
+/* function openOrSenior(data){
+  var memlist= [];
+  
+   data.forEach(function (member){
+      
+    if (member[0] >= 55 && member[1] >7){
+      memlist.push('Senior');
+    }
+    
+    else {
+      memlist.push('Open');
+    }
+    
+   });   
+   return memlist;
+} */
