@@ -23,10 +23,10 @@ console.log(isIsogram(" "));
    var hash = {};
    str = str.toLowerCase();
    for (var i = 0; i < str.length; i++) {
-     if (hash[str[i]]) {
-       return false;
-     }
-     hash[str[i]] = true;
+	 if (hash[str[i]]) {
+	   return false;
+	 }
+	 hash[str[i]] = true;
    }
    return true; 
 } */
@@ -44,7 +44,7 @@ console.log(isIsogram(" "));
 } */
 
 /* function isIsogram(str)  {
-    str_lc = str.toLowerCase();
+	str_lc = str.toLowerCase();
   	var letters = str_lc.split('');
   	var check4uniqueness = function(value, index, self) { 
   	return self.indexOf(value) === index;
@@ -60,9 +60,9 @@ console.log(isIsogram(" "));
   str = str.toLowerCase()
   
   for (var i = 0; i < str.length; i++) {
-    if (str.indexOf(str.charAt(i), i + 1) >= 0) {
-      return false
-    }
+	if (str.indexOf(str.charAt(i), i + 1) >= 0) {
+	  return false
+	}
   }
   
   return true
@@ -72,11 +72,11 @@ console.log(isIsogram(" "));
   var map = {};
   var result = true;
   str.split('').forEach(function(char) {
-    if (map[char.toUpperCase()] === undefined) {
-      map[char.toUpperCase()] = 1;
-    } else {
-      result = false;
-    }
+	if (map[char.toUpperCase()] === undefined) {
+	  map[char.toUpperCase()] = 1;
+	} else {
+	  result = false;
+	}
   });
   return result;
 } */
@@ -84,4 +84,3 @@ console.log(isIsogram(" "));
 /* function isIsogram(str) {
   return !str || str.toLowerCase().split('').every(function(v, i, arr) {return arr.indexOf(v) == i;});
 } */
-
