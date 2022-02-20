@@ -8,4 +8,4 @@ function even_or_odd(number) {
   }
 }
 
-console.log(even_or_odd(13));
+console.log(even_or_odd(0));
