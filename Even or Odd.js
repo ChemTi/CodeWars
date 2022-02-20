@@ -7,3 +7,5 @@ function even_or_odd(number) {
     return undefined;
   }
 }
+
+console.log(even_or_odd(13));
