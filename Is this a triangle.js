@@ -3,5 +3,15 @@
 (In this case, all triangles must have surface greater than 0 to be accepted). */
 
 function isTriangle(a, b, c) {
+  let max = Math.max(a, b, c);
+  let sum = a + b + c;
+  return sum - max > max;
   return false;
 }
+
+console.log(isTriangle(7, 2, 2));
+
+/* function isTriangle(a,b,c)
+{
+  return a + b > c && a + c > b && c + b > a;
+} */
