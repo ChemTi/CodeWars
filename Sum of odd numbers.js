@@ -16,4 +16,17 @@ function rowSumOddNumbers(n) {
   return Math.pow(n, 3);
 }
 
-console.log(rowSumOddNumbers(42))
+console.log(rowSumOddNumbers(6));
+
+/* let rowSumOddNumbers = n => n ** 3; */
+
+/* function rowSumOddNumbers(n) {
+  var start = n(n-1) + 1;   // n * n - n + 1;
+  var result = 0;
+
+  for (i = 0; i < n; i++) {
+    result = result + (start + i * 2);
+  }
+
+  return result;
+} */
