@@ -10,14 +10,21 @@ Examples
 ""  -->  "" */
 
 function order(words) {
-  return words
-    .split(" ")
-    .sort(function (a, b) {
-      return a.match(/\d/) - b.match(/\d/);
-    })
-    .join(" ");
+  return words.split(" ").sort(function (a, b) {return a.match(/\d/) - b.match(/\d/);}).join(" ");
 }
 console.log(order("is2 Thi1s T4est 3a"));
+
+/* function order(words){
+  if (words.length == 0){return words}
+  let wordsarr = words.split(' ');
+  let indarr = words.match(/\d/g);
+  let neword = [];
+  for (let i=1;i<=indarr.length;i++){
+    let ind = indarr.indexOf(i.toString())
+    neword.push(wordsarr[ind])
+  }
+  return neword.join(' ')
+} */
 
 /* var reg = /\d/;
 
