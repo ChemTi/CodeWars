@@ -16,5 +16,25 @@ Input: [0, -1, -5]
 Output: "even" */
 
 function oddOrEven(array) {
-    
-}
+    return array.reduce( function (sum, item) { return sum + item }, 0) % 2 == 0 ? 'even': 'odd';
+} 
+
+console.log(Odd([0, -1, -5]));
+
+/* function oddOrEven(arr) {
+  return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+} */
+
+/* function oddOrEven(array) {
+  var result = 0;
+  for (var i = 0; i < array.length; i++)
+  {result+=array[i];}
+  if (result%2 == 0)
+  {return "even";}
+  else{return "odd";}
+} */
+
+/* const oddOrEven=arr=>["even","odd"][Math.abs(arr.reduce((a,b)=>a+b,0))%2]; */
+
+/* const oddOrEven = array=>
+  array.filter(val=> val&1).length&1 ? `odd` : `even`; */
