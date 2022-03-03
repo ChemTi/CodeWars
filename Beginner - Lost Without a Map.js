@@ -12,3 +12,5 @@ console.log(maps([2, 4, 6]))
 /*function maps(x) {
   return x.map(function(num) {return num * 2} )
 }*/
+
+/*  */
