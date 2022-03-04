@@ -20,4 +20,34 @@ console.log(positiveSum([-1, 2, 3, 4, -5])); //9
     return sum + (current > 0 ? current : 0);
   }
   return arr.reduce(checkNegative, 0);
-}*/
+} */
+
+/* function positiveSum(arr) {
+    let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+          sum = sum + arr[i];
+      } 
+  }
+  return sum
+} */
+
+/* function positiveSum (arr) {
+  return arr.filter(x => x>=0).reduce((a, c) => a + c, 0);
+} */
+
+/* function positiveSum( obj ) {
+  return obj.map(el => el < 0 ? 0 : el).reduce((acc, i)=> acc + i, 0)
+} */
+
+/* function positiveSum(arr) {
+  var sum = 0;
+  arr.forEach(function(v,i,a) {
+    if(v>0){sum+=v;}
+  });
+  return sum;
+} */
+
+/* function positiveSum(arr) {
+  return arr.length != 0 ? arr.reduce(function (a,b){ return a > 0 && b > 0 ? a + b : a >= 0 && b < 0 ? a + 0 : b >= 0 && a < 0 ? b + 0 : 0}) : 0;
+} */
