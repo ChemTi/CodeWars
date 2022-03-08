@@ -1,7 +1,8 @@
-function calcSumm(numOne, numTwo) {
-  let numSumm = numOne + numTwo;
-  return numSumm;
+function highAndLow(numbers) {
+  let spl = numbers.split(" ");
+  return Math.max.apply(null, spl) + " " + Math.min.apply(null, spl);
 }
 
-let funcRezult = calcSumm(1, 2);
-console.log("Сумма:" + funcRezult)
+console.log(highAndLow("1 2 3 4 5"));
+console.log(highAndLow("1 2 -3 4 5"));
+console.log(highAndLow("1 9 3 4 -5"));
