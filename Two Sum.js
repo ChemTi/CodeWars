@@ -9,5 +9,14 @@ Based on: http://oj.leetcode.com/problems/two-sum/
 twoSum [1, 2, 3] 4 === (0, 2) */
 
 function twoSum(numbers, target) {
-    
+    for (var i = 0; i < numbers.length; i++) {
+        for (var j = 1; j < numbers.length; j++) {
+            if (numbers[i] + numbers[j] == target) {
+                return i +" "+ j;
+            }
+        }
+    }
 }
+
+console.log(twoSum([1, 2, 3], 4));
+console.log(twoSum([2, 5, 6], 11));
