@@ -1,8 +1,12 @@
-function highAndLow(numbers) {
-  let spl = numbers.split(" ");
-  return Math.max.apply(null, spl) + " " + Math.min.apply(null, spl);
+function twoSum(numbers, target) {
+  var tmp, hash = {};
+  numbers.forEach(function(a, i){ hash[a] = i; })
+  // for (var i = 0; i < numbers.length; i++){
+  //   tmp = target - numbers[i];
+  //   if (typeof hash[tmp] !== 'undefined') return [i, hash[tmp]]
+  // }
+  return hash
 }
 
-console.log(highAndLow("1 2 3 4 5"));
-console.log(highAndLow("1 2 -3 4 5"));
-console.log(highAndLow("1 9 3 4 -5"));
+console.log(twoSum([1, 2, 3], 4));
+console.log(twoSum([2, 5, 6], 11));
